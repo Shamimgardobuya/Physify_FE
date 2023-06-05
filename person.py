@@ -6,24 +6,26 @@ class Person:
         
         if  initialAge <= 1:
             self.initialAge = 0 
-            print("Age is not valid, setting age to 0")  
+            print("Age is not valid, setting age to 0.") 
+        elif initialAge >30 :
+             print("Age has to be in range of -5 to 30") 
             # return initialAge
         # self.age_of_person.append(self.initialAge)
     def amIOld(self):
                 if self.initialAge >= 18:
-                    return "You are old"
+                    print("You are old.")
                 elif self.initialAge < 13 :
-                    return "You are young"
+                    print("You are young.")
                 elif self.initialAge  >= 13 and self.initialAge < 18 :
-                    return "You are a teenager"
+                    print("You are a teenager.")
     def yearPasses(self):
                 
                 self.age_of_person.append(self.initialAge)
                 count = self.age_of_person.count(self.initialAge)
-                print()
                 if count == 1  :  # don't count the ones that count == 2
                   self.initialAge = self.initialAge + count 
                   return self.initialAge
+                
                 else:
                     if count > 1 :
                         self.initialAge = self.initialAge + 1
@@ -39,8 +41,9 @@ for i in range(0, t): #0, 6
     p.amIOld()    # for first age user input
     for j in range(0, 3): #iteration will happen thrice
        p.yearPasses()
+       
         # print(j)
-    print(j,p.yearPasses())
+    #    print(p.yearPasses())
     p.amIOld()
     print("")
 
