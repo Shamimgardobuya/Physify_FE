@@ -1,0 +1,37 @@
+body{
+    background-color: aliceblue;
+}
+.Day{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex: 500px; */
+    flex: 7;
+}
+#task1{
+    border: 3px solid black;
+    flex: 1 0 0;
+    order: 3;
+    /* align-self: center; */
+    display: inline-flex;
+
+
+}
+#task2{
+    border: 3px solid black;
+    order: 2;
+
+    /* align-self: center; */
+
+}
+#task3{
+    border: 3px solid black;
+    order: 1;
+    /* align-self: center; */
+}
+.Day1{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    background-color:antiquewhite;
+    gap: 10%;
+}
