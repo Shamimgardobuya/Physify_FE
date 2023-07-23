@@ -66,15 +66,28 @@ print(converting_measurments(month_precip))
 #  for 2013 and the numpy array 
 # of month names to create plot of Average
 #  Monthly Precipitation in 2013 for Boulder, CO.
-fig,ax = plt.subplots(figsize = (10,8))
-ax.bar(["Jan", "Feb", "Mar", "Apr", "May", "June", "July", 
-          "Aug", "Sept", "Oct", "Nov", "Dec"]
-,
-       month_avg,
-       color='black'
+fig,ax = plt.subplots(figsize = (9,6))
+# ax.bar(["Jan", "Feb", "Mar", "Apr", "May", "June", "July", 
+#           "Aug", "Sept", "Oct", "Nov", "Dec"]
+# ,
+#        month_avg,
+#        color='blue'
+#        )
+ax.plot(["Jan", "Feb", "Mar", "Apr", "May", "June", "July",  #x - axis
+          "Aug", "Sept", "Oct", "Nov", "Dec"],
+       month_avg,       #y - axis
+       color='blue',
+    #    edgecolors='lightblue',
+    #    cmap='cyan',
+       alpha=0.4,  #transparency of the color
        )
+ax.set(
+    title = 'Monthly Average Precipitation \n in Kenya',
+    xlabel = 'months',
+    ylabel = 'average per month\n(inches)'
+)
 
 plt.show()
 
-
+# TypeError: 'ArtistList' object is not callable
 
