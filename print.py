@@ -61,7 +61,7 @@ def find_fibonacci(number):
     else:
         return find_fibonacci(number - 1) + find_fibonacci(number - 2)
 
-ans=13
+ans=7
 for i in range(int(ans)):
             fibo_list = []
             fibo_list.append(find_fibonacci(i))
