@@ -29,10 +29,19 @@ def find_power(number):
         # print(find_power(number**number - 1))
         return number ** find_power(number - 1)
    
-# print(find_power(4))
 
 for i in range(0,4):
     print(find_power(i))
-#0,1,2,3
-#
+#0,1,2,9,
+#first call number is 
+#  3**2 power is 2
+
+# 9
+# >>> 2**1 second call number is 2 , power is now 1
+# 2
+# >>> 1**0 third call number is 1, power is now 0
+# 1
+# >>> 0**0 fourth call number is 0, power is now 
+# 0
+
 
