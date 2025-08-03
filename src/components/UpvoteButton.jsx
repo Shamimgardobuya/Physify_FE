@@ -46,12 +46,11 @@ const UpvoteButton = (props) => {
 
     
     
-
 console.log('data from socket', dataFromSocket)
     return (
         <>
         <button className="bg-blue-500 hover:bg-blue-700 rounded text-white font-bold px-4 py-2" onClick={counter}> Upvote</button>
-        <p>{dataFromSocket}</p>
+        <p>  {dataFromSocket}</p>
         </>
     )
     
