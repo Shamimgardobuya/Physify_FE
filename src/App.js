@@ -8,7 +8,6 @@ import Answer from './components/Answer';
 import ListQuestions from './components/ListQuestions';
 
 function App() {
-  const { isLoading, error } = useAuth0()
   return (
     <main className="App">
       {console.log("ususbdsub")}
