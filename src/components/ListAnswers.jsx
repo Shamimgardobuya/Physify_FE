@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import UpvoteButton from "./UpvoteButton";
 import Rend from "./Rend";
-import  useParams  from "react-router";
-import  Link  from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const Answers = ()=> {
     const { id } = useParams()
