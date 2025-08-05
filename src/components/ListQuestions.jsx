@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Answers from "./ListAnswers";
 import { Link, useNavigate } from "react-router-dom";
 import Rend from "./Rend";
 import 'katex/dist/katex.min.css';
@@ -49,7 +48,7 @@ const ListQuestions = ()=> {
                         <li 
                             key={question.id}  className="p-4 border rounded-xl shadow-sm bg-white" > 
                         
-                        <img src={question.image_url} alt="no image" className="w-40"/>
+                        <img src={question.image_url} alt="none" className="w-40"/>
                             <Rend text={question.text}/>
                             {console.log("uuu",  <Rend text={question.text}/> )}
                             <button className="text-sm text-blue-600 mt-2" onClick={()=> 

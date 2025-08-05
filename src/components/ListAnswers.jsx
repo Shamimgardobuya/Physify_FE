@@ -1,14 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
 import UpvoteButton from "./UpvoteButton";
 import Rend from "./Rend";
-import { useLocation, useParams } from "react-router";
-import { Link } from "react-router-dom";
+import  useParams  from "react-router";
+import  Link  from "react-router-dom";
 
 const Answers = ()=> {
     const { id } = useParams()
     const [answers, setAnswers] = useState([])
-    const [ loading , setLoading ] = useState(true)
      useEffect(() => {
     fetch(`${process.env.REACT_APP_BACKEND_URL}/questions/${id}`)
       .then(res => res.json())
@@ -38,7 +36,7 @@ const Answers = ()=> {
                         <li key={answer.id} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"> 
                         {
                             <Rend text={(answer.text)}/>
-}                        <img src={answer.image_url} alt="no image" className="w-40"/>
+}                        <img src={answer.image_url} alt="none" className="w-40"/>
 
 
                         <UpvoteButton answerId={answer.id}/>

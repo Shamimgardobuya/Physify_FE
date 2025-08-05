@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Login from './components/Login';
 import Question from './components/Question';
-import { BrowserRouter, Router,   Route, Routes} from "react-router-dom";
+import { BrowserRouter,   Route, Routes} from "react-router-dom";
 import Answers from './components/ListAnswers';
 import Answer from './components/Answer';
 import ListQuestions from './components/ListQuestions';
@@ -10,7 +9,6 @@ import ListQuestions from './components/ListQuestions';
 function App() {
   return (
     <main className="App">
-      {console.log("ususbdsub")}
       <h1> Physics App</h1>
       <BrowserRouter
       >

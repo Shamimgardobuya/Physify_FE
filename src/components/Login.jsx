@@ -1,7 +1,5 @@
 import axios from "axios";
-import { useState,  } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Question from "./Question";
+import {  useNavigate } from "react-router-dom";
 
 const Login = () => {
     const navigate = useNavigate()

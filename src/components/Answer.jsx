@@ -3,7 +3,6 @@ import axios from "axios";
 import { useNavigate, useParams } from "react-router";
 const Answer = () => {
   
-  const formRef = useRef();
   const navigate = useNavigate()
   const { question_id } = useParams()
   const submitData =  async(formData)=> {
